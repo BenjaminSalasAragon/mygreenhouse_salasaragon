@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Servicios MyGreenhouse</title>
+        <link rel="icon" href="https://thumbs.dreamstime.com/z/icono-dibujado-mano-del-bosquejo-invernadero-107318634.jpg">
+        <link rel="stylesheet" href="../styles/main.css">
+    </head>
+
+    <body class="grid-container">
+        <header class="header">
+            <img src="https://img.freepik.com/premium-vector/vector-hand-drawn-greenhouse-outline-doodle-icon-greenhouse-sketch-illustration-print-web-mobile-infographics-isolated-white-background_107173-17458.jpg?w=2000" class="imagenLogo" alt="Logo de Greenhouse">
+            <h1>Servicios   </h1>
+        </header>
+
+        <nav class="barraNavegadora">
+            <ul>
+                <li> <a href="../index.html"> Inicio</a></li>
+                <li> <a href="./graficas.html"> Graficas</a></li>
+                <li> <a href="./monitoreo.html"> Monitoreo</a></li>
+                <li> <a href="./servicios.html"> Servicios</a></li>
+                <li> <a href="./iniciosesion.html"> Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+       
+        <!--
+        <aside>
+            <div>
+                <h3>Recomendaciones del Día</h3>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_FDD0TcO1mQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </aside>
+        -->
+       
+        <main class="mainServicios">
+            <div>
+                <h2>Agregar Maceta</h2>
+                <form action="POST">
+                    <label for="nombreMaceta"> Ingresar identificador de Maceta: </label>
+                    <input type="text" name="nombre_Maceta" id="nombreMaceta">
+                    <br>
+                    <label for="imagenMaceta">Ingresar imagen/foto de la maceta:</label>
+                    <input type="file" name="imagen_Maceta" id="imagenMaceta">
+                    <br>
+                    <label for="sensorNuevomaceta">Ingresa link de conexión del nuevo sensor:</label>
+                    <input type="url" name="url_sensorNuevomaceta" id="sensorNuevomaceta">
+                    <br>
+                    <label>¿Desea agregar otro sensor?</label>
+                    <input type="button" name="boton_agregarsensor" value="Agregar otro sensor">
+                </form>
+            </div>
+            <div>
+                <h2>Agregar Gráfica</h2>
+                <form action="POST">
+                    <label for="nombreGrafica"> Ingresar identificador de Gráfica: </label>
+                    <input type="text" name="nombre_Gráfica" id="nombreGrafica">
+                    <br>
+                    <label for="datosEjex">Ingrese dirección url de Datos del eje X:</label>
+                    <input type="url" name="datosEjex" id="datosEjex">
+                    <br>
+                    <label for="datosEjey">Ingrese dirección url de Datos del eje Y:</label>
+                    <input type="url" name="datosEjey" id="datosEjey">
+                    <br>
+                    <label>Agregar Gráfica</label>
+                    <input type="button" name="boton_agregagrafica" value="Agregar">
+                </form>
+            </div>
+            <div>
+                <h2>Agregar Forma de Monitoreo</h2>
+                <form action="POST">
+                    <label for="nombreMonitoreo"> Ingresar identificador de Monitore: </label>
+                    <input type="text" name="nombre_Monitoreo" id="nombreMonitoreo">
+                    <br>
+                    <label for="sensorNuevomaceta">Ingresa link de conexión de Monitoreo:</label>
+                    <input type="url" name="url_sensorNuevomaceta" id="sensorNuevomaceta">
+                    <br>
+                    <label>Agregar Monitoreo</label>
+                    <input type="button" name="boton_agregarmonitoreo" value="Agregar">
+                </form>
+            </div>
+        </main>
+        
+        <footer class="piedePagina">
+            <span> Web desarrollada por Benjamin Salas Aragon</span>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/1383/1383336.png" alt="Logo de Whatsapp">
+                <img src="https://cdn-icons-png.flaticon.com/512/1383/1383326.png" alt="Logo de Facebook">
+                <img src="https://cdn-icons-png.flaticon.com/512/1383/1383330.png" alt="Logo de Instagram">
+            </div>
+        </footer>
+    </body>
+
+</html>
+<!DOCTYPE html>

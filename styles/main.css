@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;700;900&display=swap');
+
+body{
+    background-color: rgb(235, 245, 251);
+    margin-left: 0px;
+    font-family: 'Inconsolata', monospace;
+}
+
+@media (max-width:300px){
+    .grid-container{
+        display: grid;
+        grid-template:
+        "header" 100px
+        "barraNavegadora" 100px
+        "main" auto
+        "piedePagina" 100px
+    }
+}
+
+@media (min-width:764px){
+    .grid-container{
+        display: grid;
+        grid-template:
+        "header barraNavegadora" 100px
+        "main main" auto
+        "piedePagina piedePagina" 100px/
+        50% 50%;
+    }
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.header{
+    background-color: rgb(253, 254, 254);
+    border-top: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    /*width: 100vw;
+    top: 0px;*/
+}
+
+.barraNavegadora{
+    grid-area: barraNavegadora ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color:  rgb(253, 254, 254);
+}
+
+.barraNavegadora ul{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.barraNavegadora a{
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    position: static;
+}
+
+.barraNavegadora a:hover{
+    text-decoration: none;
+    font-size: large;
+    padding: 10px;
+    background-color: rgb(234, 250, 241);
+    border-radius: 20px;
+
+}
+
+.maceta{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgb(234, 250, 241);
+    padding: 5px;
+    margin: 3px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.maceta div{
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.maceta article{
+    display: flex;
+    flex-direction: column;
+}
+
+.maceta a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.maceta a:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+}
+.piedePagina{
+    grid-area: piedePagina;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(251, 238, 230);
+    border: 1px solid black;
+    top: 0px;
+    position: static;
+    bottom: 0px;
+    margin-left:3px ;
+}
+
+.piedePagina span{
+    flex-grow: 1;
+    padding: 20px;
+    font-size: large;
+    justify-content: center;
+}
+
+.piedePagina div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding: 3px;
+}
+
+.piedePagina img{
+    height: 70px;
+    width: 70px;
+}
+
+.imagenLogo{
+    border-radius: 30px;
+    width: 90px;
+    height: 90px;
+}
+
+.imagenMaceta{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+/* Estilos de la página Inicio de Sesión */
+#mainIniciosesion{
+    justify-content: center;
+    height: 80vh;
+}
+
+.cardIniciosesion{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2px;
+    font-size: larger;
+    width: 30vw;
+}
+
+.cardIniciosesion img{
+    padding: 5px;
+}
+
+.cardIniciosesion form{
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardIniciosesion input{
+    opacity: 0.5;
+}
+
+/* Estilos la página de Servicios*/
+.mainServicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.mainServicios div{
+    background-color: rgb(234, 250, 241);
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 95vw;
+}
+
+.mainServicios form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 40vw;
+}
+
+.mainServicios h2{
+    width: 40vw;
+}
+
+.mainServicios label{
+    padding: 2px;
+}
+
+.mainServicios input{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 3px;
+}
+/* Estilos la página de Monitoreo*/
+.mainMonitoreo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 5px;
+    padding: 5px;
+    align-items: center;
+}
+
+.seleccionMonitoreo{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(234, 250, 241);
+    padding: 5px;
+    font-size: x-large;
+    margin: 5px;
+    width: 96vw;
+}
+
+.seleccionMonitoreo input{
+    font-size: large;
+    font-family: 'Inconsolata', monospace;
+}
+
+.vistaMonitoreo{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(234, 250, 241);
+    width: 96vw;
+}
+
+.muestraMonitoreo{
+    background-color: rgb(235, 245, 251);
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 5px;
+    margin: 5px;
+    width: 94vw;
+}
+
+.muestraMonitoreo div{
+    font-size: large;
+    padding: 5px;
+}
+.muestraMonitoreo img{
+    height: 50vh;
+    width: min-content;
+}
+
+
+/* Estilos la página de Graficas*/
+.mainGraficas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.cardGrafica{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(234, 250, 241);
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: larger;
+}
