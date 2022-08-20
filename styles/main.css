@@ -5,7 +5,7 @@ body{
     margin-left: 0px;
     font-family: 'Inconsolata', monospace;
     animation-name: animacionBody;
-    animation-duration: 10;
+    animation-duration: 10s;
 }
 
 @keyframes animacionBody {
