@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;700;900&display=swap');
 
 body{
-    background-color: rgb(235, 245, 251);
     margin-left: 0px;
     font-family: 'Inconsolata', monospace;
     animation-name: animacionBody;
-    animation-duration: 10s;
+    animation-duration: 4s;
 }
 
 @keyframes animacionBody {
     from {background-color:rgb(235, 245, 251);}
-    to {background-color: rgb(81,129,187);}
+    to {background-color: rgb(187, 125, 81);}
 }
 
 @media (max-width:300px){
