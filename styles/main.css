@@ -4,6 +4,13 @@ body{
     background-color: rgb(235, 245, 251);
     margin-left: 0px;
     font-family: 'Inconsolata', monospace;
+    animation-name: animacionBody;
+    animation-duration: 10;
+}
+
+@keyframes animacionBody {
+    from {background-color:rgb(235, 245, 251);}
+    to {background-color: rgb(81,129,187);}
 }
 
 @media (max-width:300px){
