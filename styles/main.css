@@ -8,6 +8,7 @@ body{
     animation-iteration-count: infinite;
 }
 
+/* En esta parte hice la animación de fondo de la pagina para que pareciera un ciclo de un día*/
 @keyframes animacionBody {
     0% {background-color:rgb(0, 204, 255);}
     50% {background-color: rgb(81,129,187);}
