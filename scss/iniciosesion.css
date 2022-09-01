@@ -1,0 +1,27 @@
+#mainIniciosesion {
+  justify-content: center;
+  height: 80vh;
+}
+
+.cardIniciosesion {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2px;
+  font-size: larger;
+  width: 30vw;
+}
+.cardIniciosesion img {
+  padding: 5px;
+}
+.cardIniciosesion form {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cardIniciosesion input {
+  opacity: 0.5;
+}/*# sourceMappingURL=iniciosesion.css.map */

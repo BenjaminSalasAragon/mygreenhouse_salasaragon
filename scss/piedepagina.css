@@ -1,0 +1,29 @@
+.piedePagina {
+  grid-area: piedePagina;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(251, 238, 230);
+  border: 1px solid black;
+  top: 0px;
+  position: static;
+  bottom: 0px;
+  margin-left: 3px;
+}
+.piedePagina span {
+  flex-grow: 1;
+  padding: 20px;
+  font-size: large;
+  justify-content: center;
+}
+.piedePagina div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding: 3px;
+}
+.piedePagina img {
+  height: 70px;
+  width: 70px;
+}/*# sourceMappingURL=piedepagina.css.map */
