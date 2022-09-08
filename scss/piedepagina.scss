@@ -1,10 +1,12 @@
+@import url(variables.scss);
+
 .piedePagina{
     grid-area: piedePagina;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(251, 238, 230);
+    background-color: map-get($Colores,FOOTER);
     border: 1px solid black;
     top: 0px;
     position: static;

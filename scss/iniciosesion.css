@@ -1,3 +1,4 @@
+@import url(variables.scss);
 #mainIniciosesion {
   justify-content: center;
   height: 80vh;
@@ -5,7 +6,7 @@
 
 .cardIniciosesion {
   border: 1px solid rgb(0, 0, 0);
-  background-color: whitesmoke;
+  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;

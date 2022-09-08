@@ -1,4 +1,3 @@
-@import url(piedepagina.scss);
 main {
   grid-area: main;
   display: flex;

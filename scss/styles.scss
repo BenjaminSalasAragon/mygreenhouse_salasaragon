@@ -6,7 +6,6 @@
 @import url(graficas.scss);
 @import url(servicios.scss);
 @import url(variables.scss);
-@import url('piedepagina.scss');
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;700;900&display=swap');
 
@@ -72,8 +71,8 @@ main{
 }
 
 .imagenMaceta{
-    width: 200px;
-    height: 200px;
+    width: 10px;
+    height: 10px;
     border-radius: 20px;
 }
 
